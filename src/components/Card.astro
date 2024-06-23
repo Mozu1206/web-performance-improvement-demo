@@ -5,11 +5,13 @@ interface Props {
 }
 
 const { title, body } = Astro.props;
+
+import catImage from '../../src/assets/cat.jpg';
 ---
 
 <li class="link-card">
 	<div class="image">
-		<img src="/src/assets/cat.jpg" alt="cat image">
+		<img src={catImage.src} alt="cat image">
 	</div>
 		<h2 class="title">
 			{title}
