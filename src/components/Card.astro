@@ -10,9 +10,7 @@ import catImage from '../../src/assets/cat.jpg';
 ---
 
 <li class="link-card">
-	<div class="image">
-		<img src={catImage.src} alt="cat image" width="0" height="0">
-	</div>
+		<img class="image" src={catImage.src} alt="cat image">
 		<h2 class="title">
 			{title}
 		</h2>
@@ -25,7 +23,7 @@ import catImage from '../../src/assets/cat.jpg';
 		list-style: none;
 		display: flex;
 		flex-direction: column;
-		padding: 32px;
+		padding: 16px;
 		background-color: #23262d;
 		border-radius: 7px;
 		background-position: 100%;
@@ -41,12 +39,8 @@ import catImage from '../../src/assets/cat.jpg';
 		margin-bottom: 0;
 	}
 	.image {
-		width: 400px;
-		height: 250px;
-		img{
-			width: 100%;
-			height:auto;
-		}
+		width: 544px;
+		height: 340px;
 	}
 	.title{
 		margin-top: 16px;
